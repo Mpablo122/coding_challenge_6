@@ -61,3 +61,12 @@ function convertCurrency(amount, exchangeRate){
 }
 convertCurrency(100, 1.1);  // output should be $110
 convertCurrency(250, 0.85); // output shoudl be $212.5
+
+//"Task 6 - Higher-Order Function for Bulk Orders."
+
+function applyBulkDiscount (orders, discountFunction){
+    return orders.map(discountFunction);
+}
+let orders = [200, 600, 1200, 450, 800]
+let discountedOrders = applyBulkDiscount (orders, amount => amount > 500 ? amount*0.9: amount);
+console.log(discountedOrders)
