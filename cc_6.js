@@ -59,5 +59,5 @@ function convertCurrency(amount, exchangeRate){
     let convertedAmount = amount * exchangeRate;
     console.log (`Converted amount: $${convertedAmount}`);
 }
-convertCurrency(100, 1.1);  // output should be 110
-convertCurrency(250, 0.85); // output shoudl be 212.5
+convertCurrency(100, 1.1);  // output should be $110
+convertCurrency(250, 0.85); // output shoudl be $212.5
