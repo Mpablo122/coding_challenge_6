@@ -38,11 +38,11 @@ calculateBonus(7000, "Good");      // output shoudl be 700
 function calculateSubscriptionCost(plan, months, discount = 0){
     let monthlyrate = 0;
     if (plan === "Basic"){
-        monthlyrate = 10
+        monthlyrate = 10;
     } else if (plan === "Premium"){
         monthlyrate = 20;
     } else if (plan === "Enterprise"){
-        monthlyrate = 50
+        monthlyrate = 50;
     } else {
         console.log("The Wrong Plan has been selected");
         return;
@@ -69,7 +69,7 @@ function applyBulkDiscount (orders, discountFunction){
 }
 let orders = [200, 600, 1200, 450, 800]
 let discountedOrders = applyBulkDiscount (orders, amount => amount > 500 ? amount*0.9: amount);
-console.log(discountedOrders)
+console.log(discountedOrders);
 
 // "Task 7 - "Business Expense tracker"
 function createExpenseTracker() {
@@ -83,3 +83,15 @@ function createExpenseTracker() {
 let tracker = createExpenseTracker();
 console.log(tracker(200)); // Expenses should be 200
 console.log(tracker(150)); // expenses should be 350
+
+//"Task 8 - Employee Promotion Evaluation."
+
+function calculateYearsToPromotion (employeelevel){
+    if (employeelevel >= 10){
+        return 0;
+    }
+    return 2 + calculateYearsToPromotion(employeelevel + 1);
+}
+
+console.log(`Years to Level 10: ${calculateYearsToPromotion(7)}`); // output should be 10:6
+console.log(`Years to Level 10: ${calculateYearsToPromotion(5)}`);// output should be 10:10
