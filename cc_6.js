@@ -8,8 +8,8 @@ calculateProfit(50,70,200);// same with this one (both shoudl return with differ
 
 // "Task 2 - Sales Tax Computation."
 function calculateSalesTax (amount, taxRate) {
-let Salestaxes = amount * taxRate;
-console.log(`Sales tax Computation: $${Salestaxes}`);
+let salestaxes = amount * taxRate;
+console.log(`Sales tax Computation: $${salestaxes}`);
 }
 
 calculateSalesTax(100, 0.07); 
