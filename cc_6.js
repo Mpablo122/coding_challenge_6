@@ -21,11 +21,13 @@ let calculateBonus = (salary, performanceRating) => {
     let bonusPercentage = 0;
     
     if(performanceRating === "Excellent") {
-    bonusPercentage = 0.20;
-}   else if (performanceRating === "Good"){
-    bonusPercentage = 0.10;
-}   else if (performanceRating === "Average") {
-    bonusPercentage = 0.05;
+        bonusPercentage = 0.20;
+    }   
+    else if (performanceRating === "Good"){
+        bonusPercentage = 0.10;
+    }   
+    else if (performanceRating === "Average") {
+        bonusPercentage = 0.05;
 }
 
 let bonus = salary * bonusPercentage;
