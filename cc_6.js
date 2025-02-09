@@ -34,7 +34,7 @@ let calculateBonus = (salary, performanceRating) => {
     console.log (`Bonus: $${bonus}`);
 }
 calculateBonus(5000, "Excellent"); // output should be 1000
-calculateBonus(7000, "Good");      // output shoudl be 700
+calculateBonus(7000, "Good");      // output should be 700
 
 // Task 4 - Subscription Pricing Model.
 function calculateSubscriptionCost(plan, months, discount = 0){
